@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+	<title>Demo</title>
+	<script type="text/javascript" src="angular.min.js"></script>
+</head>
+<body ng-init="names=['Michael', 'Bob', 'Jerry']">
+<!-- placeholer for the name variable -->
+<h1>Welcome {{name}} !</h1>
+<input placeholder="type in your name.." ng-model="name" />
+<ul>
+
+        <li ng-repeat="personName in names">{{personName}}</li>
+
+</ul>
+</body>
+</html>
